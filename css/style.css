@@ -1,0 +1,30 @@
+h1 {
+    color: orange;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > p {
+    text-align: right;
+}
+
+h3 {
+    color: green;
+}
+
+div {
+    border: 3px solid black;
+    padding: 1px 40px 1px;
+}
+
+div > h4 {
+    text-decoration: underline;
+}
+
+div > p, h4 {
+    margin: 0;
+}
+
+div > p {
+    font-weight: bold;
+}

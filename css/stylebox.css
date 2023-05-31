@@ -1,0 +1,21 @@
+
+
+.pinkBack {
+    border: 2px solid orange;
+    background-color: #f040e4d4;
+    font-family: sans-serif;
+    padding: 20px 0 0 20px;
+
+}
+
+
+
+.greenBack {
+    background-color: lightgreen;
+}
+
+div > p {
+    padding: 2px 50px 2px;
+
+}
+
