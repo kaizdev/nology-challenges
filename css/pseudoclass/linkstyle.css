@@ -1,0 +1,20 @@
+/* link not visted */
+a:link {
+    color: lightcoral;
+}
+
+/* Page has been visited */
+a:visited {
+    color: greenyellow;
+}
+
+/* When link is clicked (on mouse down) */
+a:active {
+    background-color: purple;
+    color: aliceblue;
+}
+
+/* on hover */
+a:hover {
+    color: fuchsia;
+}
