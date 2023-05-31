@@ -1,6 +1,6 @@
 
 div > p {
-    padding: 2px 50px 2px;
+    padding: 1px 30px 1px;
 
 }
 
@@ -14,7 +14,7 @@ div > p {
 }
 
 .card-inner {
-    background-color: palevioletred;
+    background-color: lightpink;
     border: 1px solid orange;
     margin: 30px 1px; /*need this to display both boxes */
     padding: 60px 40px;
