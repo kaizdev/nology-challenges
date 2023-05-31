@@ -1,21 +1,58 @@
 
-
-.pinkBack {
-    border: 2px solid orange;
-    background-color: #f040e4d4;
-    font-family: sans-serif;
-    padding: 20px 0 0 20px;
-
-}
-
-
-
-.greenBack {
-    background-color: lightgreen;
-}
-
 div > p {
     padding: 2px 50px 2px;
 
 }
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange-text {
+    color: orange;
+}
+
+.green-text {
+    color: green;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.underlined-text {
+    text-decoration-line: underline;
+}
+
+div {
+    border: 2px solid black;
+}
+
+div > p {
+    padding-left: 45px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.card-outer {
+    background-color: lightgreen;
+    border: 2px solid orange;
+}
+
+.card-inner {
+    background-color: palevioletred;
+    border: 1px solid orange;
+    margin: 30px 1px; /*need this to display both boxes */
+    padding: 60px 40px;
+}
+
+.card-inner > p {
+    padding: 10px 30px;
+}
