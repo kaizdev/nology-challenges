@@ -1,0 +1,31 @@
+body {
+    padding: 30px 20px 60px;
+}
+
+div {
+    font-family: Arial;
+    border: 1px solid black;
+}
+
+div > p {
+    text-decoration: underline;
+    color: red;
+}
+
+h3 {
+    color: blue;
+}
+
+ul {
+    list-style: none;
+}
+div ~ p {
+    color: brown;
+}
+
+div + p {
+    color: coral;
+    font-weight: bold;
+}
+
+
