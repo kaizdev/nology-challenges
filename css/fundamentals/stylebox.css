@@ -1,0 +1,21 @@
+
+div > p {
+    padding: 2px 50px 2px;
+
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-outer {
+    background-color: lightgreen;
+    border: 2px solid orange;
+}
+
+.card-inner {
+    background-color: palevioletred;
+    border: 1px solid orange;
+    margin: 30px 1px; /*need this to display both boxes */
+    padding: 60px 40px;
+}
