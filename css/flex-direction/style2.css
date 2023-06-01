@@ -1,0 +1,22 @@
+div {
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    width: 600px;
+    border: 1px solid black;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+}
