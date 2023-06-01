@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    width: 900px;
+    height: 300px;
+    justify-content: center;
+}
+
+div {
+    width: calc(900px / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card1 {
+    background-color: lightblue;
+}
+
+.card2 {
+    background-color: orange;
+}
+
+.card3 {
+    background-color: lightcoral;
+}
