@@ -1,4 +1,5 @@
 div {
+    /*makes changes to the individual cards */
     background-color: lightblue;
     height: 100px;
     width: 100px;
@@ -12,11 +13,11 @@ main {
     display: flex;
     width: 600px;
     border: 1px solid black;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /*changes the cards to start from 8 */
     align-items: center;
 }
 
 section {
-    display: flex;
+    display: flex; /* adding this flex means the cards 5 - 8 are displayed in-line */
     flex-direction: row-reverse;
 }
