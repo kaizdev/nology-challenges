@@ -1,0 +1,19 @@
+@use "mixins";
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    @include mixins.center-arial-bold(dotted, red);
+    height: 50px;
+}
+
+.chip {
+    @include mixins.center-arial-bold(solid, blue);
+}
+
+.pill {
+    @include mixins.center-arial-bold(dashed, blue);
+}

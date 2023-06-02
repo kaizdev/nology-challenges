@@ -1,0 +1,7 @@
+@mixin center-arial-bold($border-type, $border-color) {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px $border-type $border-color;
+    margin: 20px;
+}
