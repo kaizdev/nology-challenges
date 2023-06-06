@@ -16,9 +16,9 @@
 '2' + 3 === 5; false - string of 23 is !== 5
 10 % 3; true - gives the number 1
 10 % 3 === 1; true -> 1 === 1
-(100 % 7) % 5; ??true -> non 0 number
+(100 % 7) % 5; ??true -> non 0 number ... 2 % 5 gives us 2 - so truthy 
 (100 % 7) % 5 !== 0; ?? true-> non 0 number
-(100 % 7) % 9 == 2; ?? false
+(100 % 7) % 9 == 2; ?? true - 2
 !(10 % 2); true - 10 % 2 is false, so not false is true
 !!!!((10 % 7) % 3); False -> expression is 0. Not false is true, so not not false is false
 10 % 3 === -1 % 2; false -- 1 is not the same
