@@ -103,45 +103,77 @@ switch (day) {
 
 //* Challenge 4 - Eye Colour
 
-let parent1 = "blue";
+let parent1 = "green";
 let parent2 = "blue";
+let parentCombo = parent1 + parent2;
+console.log(parentCombo);
+let childColour;
 
-if (parent1 == "brown" && parent2 == "brown") {
-    console.log(
-        "Your eye colours are brown and brown, the changes of your child having blue eyes is 6.25%, brown is 75% and green 18.75%"
-    );
-} else if (parent1 == "green" && parent2 == "brown") {
-    console.log(
-        "Your eye colours are green and brown, the changes of your child having blue eyes is 12.5%, brown is 50% and green 37.5%"
-    );
-} else if (parent1 == "blue" && parent2 == "brown") {
-    console.log(
-        "Your eye colours are blue and brown, the changes of your child having blue eyes is 50%, brown is 50% and green 0%"
-    );
-} else if (parent1 == "green" && parent2 == "green") {
-    console.log(
-        "Your eye colours are green and green, the changes of your child having blue eyes is 25%, brown is <1% and green 75%"
-    );
-} else if (parent1 == "green" && parent2 == "blue") {
-    console.log(
-        "Your eye colours are green and blue, the changes of your child having blue eyes is 50%, brown is 0% and green 50%"
-    );
-} else if (parent1 == "blue" && parent2 == "blue") {
-    console.log(
-        "Your eye colours are blue and blue, the changes of your child having blue eyes is 99%, brown is 0% and green 1%"
-    );
+switch (parentCombo) {
+    case "brownbrown":
+        console.log(
+            `Your eye colours are ${parent1} and ${parent2}, the changes of your child having blue eyes is 6.25%, brown is 75% and green 18.75%`
+        );
+        childColour = "brown";
+        break;
+    case "greenbrown":
+    case "browngreen":
+        console.log(
+            "Your eye colours are green and brown, the changes of your child having blue eyes is 12.5%, brown is 50% and green 37.5%"
+        );
+        childColour = "brown";
+        break;
+    case "bluebrown":
+    case "brownblue":
+        console.log(
+            "Your eye colours are blue and brown, the changes of your child having blue eyes is 50%, brown is 50% and green 0%"
+        );
+        childColour = "blue";
+        break;
+    case "greenbrown":
+    case "browngreen":
+        console.log(
+            `Your eye colours are ${parent1} and ${parent2}, the changes of your child having blue eyes is 12.5%, brown is 50% and green 37.5%`
+        );
+        childColour = "brown";
+        break;
+    case "bluebrown":
+    case "brownblue":
+        console.log(
+            "Your eye colours are blue and brown, the changes of your child having blue eyes is 50%, brown is 50% and green 0%"
+        );
+        childColour = "blue";
+        break;
+    case "greengreen":
+        console.log(
+            "Your eye colours are green and green, the changes of your child having blue eyes is 25%, brown is <1% and green 75%"
+        );
+        childColour = "green";
+        break;
+    case "greenblue":
+    case "bluegreen":
+        console.log(
+            "Your eye colours are green and blue, the changes of your child having blue eyes is 50%, brown is 0% and green 50%"
+        );
+        childColour = "blue";
+        break;
+    case "blueblue":
+        console.log(
+            `Your eye colours are ${parent1} and ${parent2}, the changes of your child having blue eyes is 99%, brown is 0% and green 1%`
+        );
+        childColour = "blue";
+        break;
 }
 
-let childColour = "blue";
 switch (childColour) {
     case "brown":
-        console.log("mediocre colour");
+        console.log(`mediocre colour - ${childColour}`);
         break;
     case "blue":
-        console.log("favourite colour");
+        console.log(`favourite colour - ${childColour}`);
         break;
     case "green":
-        console.log("dislike this colour");
+        console.log(`dislike this colour - ${childColour}`);
         break;
     default:
         console.log("unknown colour");
