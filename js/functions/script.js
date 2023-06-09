@@ -14,6 +14,12 @@ const moonOrbits = (earthDays) => earthDays / 27.32240437;
 console.log(moonOrbits(54).toFixed(1));
 console.log(moonOrbits(365));
 
+// const moonOrbits = function (earthDays) {
+//     const moonOrbitPeriod = 27;
+//     const totalOrbits = earthDays / moonOrbitPeriod;
+//     return earthDays % moonOrbitPeriod === 0 ? totalOrbits : totalOrbits.toFixed(3);
+// }
+
 //^ 2. ## Challenge: Working with Circles
 
 // MVP
@@ -121,3 +127,9 @@ const lessThan100 = (num1, num2) => {
 console.log(lessThan100(22, 15)); // true
 console.log(lessThan100(83, 34)); // false (117)
 console.log(lessThan100(3, 77)); // true
+
+// A good way to consolidate this function - when dealing with booleans
+const anotherLessThan100 = (num1, num2) => num1 + num2 < 100;
+
+console.log(anotherLessThan100(22, 15)); //true
+console.log(anotherLessThan100(100, 15)); //false
