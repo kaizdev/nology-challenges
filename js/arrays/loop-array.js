@@ -59,13 +59,13 @@ const items = [
     "ice-cream",
 ];
 
-const itemsWithNum = () => {
-    for (let i = 0; i < items.length; i++) {
-        console.log(`${i + 1}. ${items[i]}`);
+const itemsWithNum = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(`${i + 1}. ${arr[i]}`);
     }
 };
 
-itemsWithNum();
+itemsWithNum(items); //update the function to have re-usable array
 
 //? ----------------------------------------------- //
 
@@ -80,7 +80,7 @@ itemsWithNum();
 // E.g: a becomes b, d becomes e, t becomes u
 // Final: z becomes a
 
-const firstString = "watermelon";
+const firstString = "zzz";
 let newString = "";
 // const letterConverter = (letter) => {
 //     return letter === "z" ? "a" : String.fromCharCode(letter.charCodeAt(0) + 1);
@@ -94,7 +94,7 @@ for (let i = 0; i < firstString.length; i++) {
     let charCode = firstString.charCodeAt(i); // get the character code number at index i
     // index is 0 or even, check if z, else +1 then convert to string
     if (i === 0 || i % 2 === 0) {
-        if (charCode === "z") {
+        if (String.fromCharCode(charCode) === "z") {
             newString += "a";
         } else {
             newString += String.fromCharCode(charCode + 1);
@@ -106,6 +106,7 @@ for (let i = 0; i < firstString.length; i++) {
 }
 
 console.log(newString);
+console.log(typeof firstString.charCodeAt(0));
 
 //? ----------------------------------------------- //
 
@@ -152,19 +153,19 @@ console.log(stringNameNoVowels, "- this is for part 1");
 
 //^ Bonus
 
-// for (let i = 0; i < stringName.length; i++) {
-//     let char = stringName[i];
-//     let nextChar = stringName[i + 1];
-//     // add the character if: a) not a vowel, or b) the next character is a vowel but is succeeded by a special character
-//     if (
-//         !vowels.includes(char) ||
-//         (nextChar && specialLetters.includes(nextChar))
-//     ) {
-//         stringNameNoVowels += stringName[i];
-//     }
-// }
+for (let i = 0; i < stringName.length; i++) {
+    let char = stringName[i];
+    let nextChar = stringName[i + 1]; // note that nextChar will return undefined when it reaches the end of the string.
+    // add the character if: a) not a vowel, or b) the next character is a vowel but is succeeded by a special character
+    if (
+        !vowels.includes(char) ||
+        (nextChar && specialLetters.includes(nextChar)) // next char is truthy && it is in the special letters array
+    ) {
+        stringNameNoVowels += stringName[i];
+    }
+}
 
-// console.log(stringNameNoVowels, "- this is the bonus part");
+console.log(stringNameNoVowels, "- this is the bonus part");
 
 //? ----------------------------------------------- //
 
