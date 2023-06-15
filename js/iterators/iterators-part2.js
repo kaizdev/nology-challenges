@@ -2,22 +2,31 @@
 
 const arrOfCodes = [114, 101, 100, 117, 99, 101];
 
-const convertedCodes = arrOfCodes.reduce((acc, curr) => {
-    const convertCodeToString = String.fromCharCode(curr);
-    return acc + convertCodeToString;
-}, "");
+const convertedCodes = arrOfCodes.reduce(
+    (acc, curr) => acc + String.fromCharCode(curr),
+    ""
+);
 
 console.log(convertedCodes, "- converted code");
+
+// const convertedCodes = arrOfCodes.reduce((acc, curr) => {
+//     const convertCodeToString = String.fromCharCode(curr);
+//     return acc + convertCodeToString;
+// }, "");
+
+// console.log(convertedCodes, "- converted code");
 
 //* 2. given an array of letters, reduce them to get the sum of character codes
 const lettArr = ["c", "h", "e", "e", "s", "e"];
 
-const sumOfCodes = lettArr.reduce((acc, curr) => {
-    const charToCode = curr.charCodeAt();
-    return acc + charToCode;
-}, 0);
+const sumOfCodes = lettArr.reduce((acc, curr) => acc + curr.charCodeAt(), 0);
 
 console.log(sumOfCodes, "- sum of the character codes");
+
+// const sumOfCodes = lettArr.reduce((acc, curr) => {
+//     const charToCode = curr.charCodeAt();
+//     return acc + charToCode;
+// }, 0);
 
 //* 3. use reduce to filter an array to only get numbers greater than 10
 
